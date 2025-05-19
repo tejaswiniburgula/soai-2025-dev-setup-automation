@@ -1,0 +1,176 @@
+# 🚀 Dev Environment Setup Guide
+
+Welcome! Follow these steps to set up Tech Stack for SoAI 2025
+
+   **Category**                          **Tool**                **Recommended Verison**
+1. Version Control System                git                     2.0 or more
+2. IDE                                   Visual Studio Code      1.99 or more
+3. VS Code Extensions                     - ruff
+                                          - python debugger
+                                          - jupyter
+                                          - Cline 
+4. Programming Languages                 Python                  3.11 (suits better than 3.12)
+5. Package and Project manager           uv                      0.7 or more (instructed below)
+6. Python packages                        - numpy
+                                          - pandas
+                                          - streamlit
+7. Ollama                               (Clearly Instructed Below)
+---
+
+## ✅ Tools to Install
+
+- **Git** (≥ 2.0)
+- **VS Code** (≥ 1.99)  
+  - Extensions: Python, Jupyter, Ruff, Cline (Autonomous Coding Agent)
+- **Python 3.11**  
+  ⚠️ *If you have Python 3.12, please uninstall it and use 3.11 for best compatibility!*
+- **Ollama** (manual install from [official website](https://ollama.com/download))
+- **uv** (from [GitHub releases](https://github.com/astral-sh/uv/releases))
+- **Python libraries:** numpy, pandas, streamlit (≥ 1.40), jupyterlab (≥ 4.2), ruff
+
+---
+
+## 📝 Step-by-Step Manual Setup
+
+### 1️⃣ Install Git
+- Download: [git-scm.com/download/win](https://git-scm.com/download/win)
+- Install and restart your computer if prompted.
+- **Check installation:**  
+  Open PowerShell and run:
+  ```
+  git --version
+  ```
+  You should see a version number (must be 2.0 or higher).
+
+---
+
+### 2️⃣ Install VS Code
+- Download: [code.visualstudio.com](https://code.visualstudio.com)
+- Install VS Code.
+- **Check installation:**  
+  ```
+  code --version
+  ```
+  Should show a version number (must be 1.99 or higher).
+
+---
+
+### 3️⃣ Install VS Code Extensions
+Open PowerShell and run each line below:
+```
+code --install-extension ms-python.python
+code --install-extension ms-toolsai.jupyter
+code --install-extension charliermarsh.ruff
+code --install-extension ms-vscode.remote.remote-ssh
+code --install-extension cline.bot
+```
+Each command installs one extension.
+
+---
+
+### 4️⃣ Install Python 3.11
+- Download: [Python 3.11 Download](https://www.python.org/downloads/release/python-3110/)
+- **IMPORTANT:** During installation, check the box that says **"Add Python to PATH"**.
+- If you have Python 3.12 or higher, **uninstall it first** to avoid conflicts.
+- **Check installation:**
+  ```
+  python --version
+  ```
+  Should show something like `Python 3.11.x`.
+
+---
+
+### 5️⃣ Install Python Packages
+Open PowerShell and run each line:
+```
+pip install numpy
+pip install pandas
+pip install streamlit>=1.40
+pip install jupyterlab>=4.2
+pip install ruff
+```
+- **Check installed packages and their versions:**
+  ```
+  pip show numpy
+  pip show pandas
+  pip show streamlit
+  pip show jupyterlab
+  pip show ruff
+  ```
+  Or see all installed packages:
+  ```
+  pip list
+  ```
+
+---
+
+### 6️⃣ Install Ollama (Local AI Models)
+- Download: [ollama.com/download](https://ollama.com/download)
+- Install and follow the instructions.
+- **How to run Ollama:**  
+  Open PowerShell and run:
+  ```
+  ollama run llama2       (even you can try llama3 or others)
+  ```
+  If you see a response, it's working!  
+  You can also run other models, e.g.:
+  ```
+  ollama run phi3
+  ```
+
+---
+
+### 7️⃣ Install uv (Fast Python Package Manager)
+- Go to: [uv GitHub Releases](https://github.com/astral-sh/uv/releases)
+- Download the latest Windows `.exe` file.
+- Move it to a folder like `C:\Program Files\uv\`
+- Add that folder to your **System PATH**:
+  - Search "Edit environment variables" in Windows
+  - Under System variables, find `Path`, click Edit, then New, and paste the folder path.
+  - Click OK and restart PowerShell.
+- **Check installation:**
+  ```
+  uv --version
+  ```
+
+---
+
+### 8️⃣ Run JupyterLab
+After installing, you can launch JupyterLab by running:
+```
+jupyter-lab
+```
+This will open JupyterLab in your browser for interactive coding and notebooks.
+
+---
+
+## 🧑‍💻 How to Run Everything
+
+- **To check if a tool is installed:**  
+  Run its version command in PowerShell (e.g., `git --version`, `python --version`).
+- **To run VS Code:**  
+  ```
+  code .
+  ```
+  (Opens VS Code in the current folder)
+- **To run JupyterLab:**  
+  ```
+  jupyter-lab
+  ```
+- **To run Ollama:**  
+  ```
+  ollama run llama2
+  ```
+  (or replace `llama2` with another model name)
+
+---
+
+## ℹ️ Need Help?
+
+If you face any issues, feel free to contact:
+
+**Sai Tejaswini Burgula**  
+📧 Email: tejaswiniburgula25@gmail.com  
+🔗 LinkedIn: ( https://www.linkedin.com/in/tejaswiniburgula/ )
+
+Happy coding! 🎉
