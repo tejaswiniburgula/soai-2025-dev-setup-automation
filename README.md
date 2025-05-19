@@ -7,7 +7,7 @@
    Open PowerShell and run:
      git clone https://github.com/tejaswiniburgula/soai-2025-dev-setup-automation.git
 
- and just run " python dev_setup_installer.py ", it's that easy. 
+ and just run " python dev_setup_installer.py "(if you already have python installed), it's that easy. 
 
  or you can ..
 
