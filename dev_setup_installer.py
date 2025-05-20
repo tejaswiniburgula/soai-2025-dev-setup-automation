@@ -140,7 +140,7 @@ def main():
     print("\nIf you face any issues, feel free to contact me:")
     print("Sai Tejaswini Burgula")
     print("Email: tejaswiniburgula25@gmail.com")
-    print("LinkedIn: https://www.linkedin.com/in/tejaswiniburgula/")
+    print("LinkedIn: https://www.linkedin.com/in/tejaswiniburgula")
     print("Thank you for using this setup script!")
     print("Happy coding!\n")
     
