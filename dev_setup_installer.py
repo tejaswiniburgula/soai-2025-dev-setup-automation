@@ -130,7 +130,7 @@ def main():
     print("- Ollama")
     print("- uv (from GitHub releases)")
 
-    answer = input("\n Would you like me to open all official download pages in your browser now? Download them manually yaar (y/n): ").strip().lower()
+    answer = input("\n Would you like me to open all official download pages in your browser now? Download them manually, it cannot be automated (y/n): ").strip().lower()
     if answer == "y":
         open_manual_links()
 
